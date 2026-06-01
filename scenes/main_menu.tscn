@@ -1,0 +1,48 @@
+[gd_scene format=3 uid="uid://c7ykcmeh7kp4k"]
+
+[ext_resource type="Script" uid="uid://c8fykdssrcpj1" path="res://main_menu.gd" id="1_ekxnf"]
+[ext_resource type="Texture2D" uid="uid://dqu002jspjtin" path="res://Sprite-0001.svg" id="2_bqqt6"]
+
+[node name="MainMenu" type="Control" unique_id=1812253140]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 288.0
+offset_top = 109.0
+offset_right = 328.0
+offset_bottom = 149.0
+scale = Vector2(3, 3)
+script = ExtResource("1_ekxnf")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1261802342]
+layout_mode = 0
+offset_left = -180.33333
+offset_top = -46.33333
+offset_right = -7.555542
+offset_bottom = 31.777786
+scale = Vector2(3, 3)
+color = Color(0.23921569, 0.10980392, 0.007843138, 1)
+
+[node name="Button" type="Button" parent="." unique_id=1299310396]
+layout_mode = 0
+offset_left = 21.666668
+offset_top = 84.333336
+offset_right = 46.666668
+offset_bottom = 92.333336
+scale = Vector2(3, 3)
+
+[node name="Label" type="Label" parent="." unique_id=1292943826]
+layout_mode = 0
+offset_left = 37.333336
+offset_top = 81.66667
+offset_right = 169.33334
+offset_bottom = 104.66667
+scale = Vector2(3, 3)
+theme_override_font_sizes/font_size = 5
+text = "Start"
+
+[node name="Sprite0001" type="Sprite2D" parent="." unique_id=1874331393]
+position = Vector2(172.33334, 47.333332)
+scale = Vector2(3, 3)
+texture = ExtResource("2_bqqt6")
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
