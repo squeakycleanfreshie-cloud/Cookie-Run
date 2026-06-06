@@ -17,6 +17,3 @@ Navigate through the gingerbread house by jumping across platforms. Reach the ex
 - GDScript
 - Aseprite
 
-## Author
-
-Made by Remy
